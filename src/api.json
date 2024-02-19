@@ -1,0 +1,77 @@
+{
+    "api": {
+        "baseUrl": "https://"
+    },
+    "endpoints": {
+        "login": {
+            "path": "/login",
+            "method": "POST",
+            "params": {
+                "username": "required",
+                "password": "required"
+            }
+        },
+        "signup": {
+            "path": "/signup",
+            "method": "POST",
+            "params": {
+                "companyname": "required",
+                "first name": "required",
+                "last name": "required",
+                "email": "required",
+                "password": "required",
+                "retype password": "required"
+            }
+        },
+        "dashboard": {
+            "path": "dashboard",
+            "method": "GET",
+            "headers": {
+                "Authorization": "Bearer your_access_token"
+            }
+        },
+        "getUsers": {
+            "path": "users",
+            "method": "GET",
+            "headers": {
+                "Authorization": "Bearer your_access_token"
+            }
+        },
+        "getTasks": {
+            "path": "tasks",
+            "method": "GET",
+            "headers": {
+                "Authorization": "Bearer your_access_token"
+            }
+        },
+        "getProjects": {
+            "path": "projects",
+            "method": "GET",
+            "headers": {
+                "Authorization": "Bearer your_access_token"
+            }
+        },
+        "getClients": {
+            "path": "clients",
+            "method": "GET",
+            "headers": {
+                "Authorization": "Bearer your_access_token"
+            }
+        },
+        "forgotPassword": {
+            "path": "/forgot-password",
+            "method": "POST",
+            "params": {
+                "email": "required"
+            }
+        },
+        "resetPassword": {
+            "path": "/reset-password",
+            "method": "POST",
+            "params": {
+                "password": "required",
+                "reset Password": "required"
+            }
+        }
+    }
+}
